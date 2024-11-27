@@ -142,20 +142,20 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 margin: 0 auto;
-max-width: 320px;
+min-width: 320px;
 }
 
 @media screen and (min-widtH: 768px) {
     .banner { 
         padding: 112px 136px;
-        max-width: 768px;
+        min-width: 768px;
 }
 }
 
 @media screen and (min-widtH: 1158px) {
 .banner { 
     padding: 188px 0;
- max-width: 1440px;
+ min-width: 1440px;
 
 }
 }
