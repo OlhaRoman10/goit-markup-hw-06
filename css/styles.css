@@ -132,6 +132,9 @@ img {
 
 
 /* Banner */
+.banner-container {
+    padding: 0;
+}
 .banner {
     display: block;
 background-color: #2e2f42;
