@@ -147,19 +147,16 @@ background-size: cover;
 margin: 0 auto;
 min-width: 320px;
 }
-
 @media screen and (min-widtH: 768px) {
     .banner { 
         padding: 112px 136px;
         min-width: 768px;
 }
 }
-
 @media screen and (min-widtH: 1158px) {
 .banner { 
     padding: 188px 0;
  min-width: 1440px;
-
 }
 }
 .banner-titel {
@@ -183,16 +180,14 @@ line-height: 1.11;
 @media screen and (min-widtH: 1158px) {
     .banner-titel {
     margin-bottom: 48px;
-
 }
 }
-
 .blue-button {
         display: block; 
         min-width: 169px;
         height: 56px;
         border: none;
-        margin: 0 auto ;
+        margin: 0 auto;
         background-color: #4d5ae5;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         font-weight: 500;
@@ -205,15 +200,33 @@ line-height: 1.11;
         padding: 16px 32px;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: background-color;
-        font-family: "Roboto", sans-serif;
-                 
+        font-family: "Roboto", sans-serif; 
 }
+
 .blue-button:hover,
 .blue-button:focus {
         background-color: #404bbf;
 }
 /* Strengths */
+.section {
+   width: 100%;
+padding: 96px 0;
+}
+@media screen and (min-widtH: 768px) {
 
+}
+@media screen and (min-widtH: 1158px) {
+    .section {
+        padding: 120px 0;
+    }
+}
+.strengths-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -226,32 +239,65 @@ line-height: 1.11;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.section {
-   width: 100%;
-    padding: 120px 0;
+
+.strengths-list {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 72px;
+}
+@media screen and (min-widtH: 1158px) {
+    .strengths-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
+.strengths-item {
+    width: 288px;
+    
+}
+@media screen and (min-widtH: 768px) {
+    .strengths-item {
+        width: calc( (100% - 1 * 24px)/ 2);
+    }
+}
+@media screen and (min-widtH: 1158px) {
+    .strengths-item {
+        display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+        width: calc( (100% - 3 * 24px)/ 4);
+    }
 }
 .strengths-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    padding: 24px 100px;
-    background-color: #f4f4fd;
-    border: 1px solid #8e8f99;
-border-radius: 4px;
-margin-bottom: 8px;
+    display:none;
 }
-
-
+@media screen and (min-widtH: 1158px) {
+    .strengths-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        padding: 24px 100px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    }
+}
 /* strengths-title*/
 .strengths-title {
-    font-weight: 700;
+     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 @media screen and (min-widtH: 768px) {
     .strengths-title {
@@ -265,16 +311,8 @@ margin-bottom: 8px;
         line-height: 1.2;
     }
 }
-
-    .strengths-list {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
-.strengths-item {
-    width: calc( (100% - 3 * 24px)/ 4);
-}
 .strengths-text {
+    font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -300,9 +338,6 @@ margin-bottom: 8px;
     color: #2e2f42;
     margin: 0 auto 72px;
 }
-
-
-
 
 
 .team-item {
