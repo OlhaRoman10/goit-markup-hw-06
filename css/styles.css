@@ -349,7 +349,7 @@ padding: 96px 0;
 }
 .strengths-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 72px;
