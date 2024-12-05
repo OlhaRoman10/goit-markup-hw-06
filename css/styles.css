@@ -274,13 +274,18 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 margin: 0 auto;
-min-width: 320px;
+width: 320px;
 }
 @media screen and (min-widtH: 768px) {
     .banner { 
         padding: 112px 136px;
-        min-width: 768px;
+        width: 768px;
 }
+}
+@media only screen and (min-width: minwidthpx) {
+    .banner  {
+        width: 1440px;
+  }
 }
 @media screen and (min-widtH: 1158px) {
 .banner { 
