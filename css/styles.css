@@ -269,30 +269,43 @@ font-style: normal;
    background-color: #2e2f42;
     text-align: center;
     padding: 72px 52px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_mob@1x.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 margin: 0 auto;
 width: 320px;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_mob@2x.jpg);
+  }
+}
 @media screen and (min-widtH: 768px) {
     .banner { 
         padding: 112px 136px;
         width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_tab@1x.jpg);
 }
 }
-@media only screen and (min-width: minwidthpx) {
-    .banner  {
-        width: 1440px;
+@media screen and (min-widtH: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-bg_tab@2x.jpg);
   }
 }
-@media screen and (min-widtH: 1158px) {
-.banner { 
-    padding: 188px 0;
- min-width: 1158px;
+@media only screen and (min-width: 1158px) {
+    .banner  {
+        width: 1440px;
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1_desc@1x.jpg);
+  }
 }
+@media screen and (min-widtH: 1158px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1-desc@2x.jpg);
+  }
 }
+
 .banner-titel {
     font-weight: 700;
     font-size: 36px;
@@ -904,8 +917,7 @@ color: #fff;
 .subscribe-button:focus {
     background-color: #31D0AA;
 }
-    /*Backdrop*/
-   
+    /*Backdrop*/ 
 .backdrop {
     position: fixed;
     top: 0;
