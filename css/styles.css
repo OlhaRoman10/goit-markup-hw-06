@@ -673,35 +673,31 @@ letter-spacing: 0.02em;
 /* Footer */
 .page-footer {
     background-color: #2e2f42;
-        padding: 96px 0;
-        display: flex;
+     display: flex;
 }
-@media only screen and (min-width: 1158px) {
-    .page-footer {
-    padding: 100px 0;
-  }
-}
-@media only screen and (max-width: 767px) {
   .footer-container {
     display: flex;
       flex-direction: column;
-      justify-content: center;
+      padding: 96px 0;
       align-items: center;
-      gap: 72px;
+      gap: 72px;     
   } 
-  }
+  
 @media only screen and (min-width: 768px) {
     .footer-container{
         display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    padding: 96px 108px;
+    align-items: baseline;
+        gap: 112px 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
     .footer-container {
     align-items: baseline;
     flex-wrap: nowrap;
+    padding: 100px 0;
   }
 }
 
@@ -710,7 +706,6 @@ letter-spacing: 0.02em;
     display: flex;
     flex-direction: column;
         margin-right: 0; 
-       /* margin-bottom: 72px;*/
         justify-content: flex-start;
     align-items: center;
   }
@@ -736,7 +731,12 @@ letter-spacing: 0.02em;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        max-width: 264px;
+        max-width: 288px;
+}
+@media only screen and (min-width: 768px) {
+    .footer-text {
+        max-width: 264px
+  }
 }
 .footer-links {
     display: flex;
@@ -744,12 +744,11 @@ letter-spacing: 0.02em;
     justify-content: center;
     align-items: center;
 }
-@media only screen and (min-width: minwidthpx) {
+@media only screen and (min-width: 768px) {
     .footer-links {
         display: block;
   }
 }
-
 .soc-wrapper {
     display: flex;
             align-items: center;
@@ -794,14 +793,17 @@ gap: 16px;
     justify-content: center;
     align-items: center;
    }
-   
+   @media only screen and (min-width: 768px) {
+    .subscribe {
+        align-items: flex-start;
+     }
+   }
 @media only screen and (min-width: 1158px) {
   .subscribe {
       display: block;
       margin-right: 0;
       margin-left: auto;
   } 
-    
   }
 
 .subscribe-text {
@@ -822,13 +824,23 @@ letter-spacing: 0.04em;
 color: #fff;
     border: 1px solid #fff;
 border-radius: 4px;
-width: 264px;
+width: 288px;
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 opacity: 0.6;
 padding-left: 16px;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+@media only screen and (min-width: 768px) {
+    .subscribe-input {
+    width: 264px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+    .subscribe-input {
+    opacity: 1;
+  }
 }
 .subscribe-input::placeholder {
     
@@ -905,8 +917,6 @@ color: #fff;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
-
 }
 .backdrop.is-open {
     opacity: 1;
