@@ -360,7 +360,7 @@ srcset="./images/Portfolio/img-4_desc@1x.jpg 1x,
 <!--Tablet version-->
 <source
 media="(min-width: 768px)"
-srcset="./images/Portfolio/img_tab@1x.jpg 1x,
+srcset="./images/Portfolio/img-4_tab@1x.jpg 1x,
 ./images/Portfolio/img-4_tab@2x.jpg 2x"/>
 <!--Mobile version-->
 <source
@@ -583,7 +583,7 @@ srcset="./images/Portfolio/img-4_mob@1x.jpg 1x,
       </div>
     </footer>
 <!--Modal-->
-    <div class="backdrop"> 
+    <div class="backdrop is-open"> 
       <div class="modal">
 <button class="close-button" type="button">
 <svg class="close" width="8" height="8">
@@ -667,28 +667,32 @@ srcset="./images/Portfolio/img-4_mob@1x.jpg 1x,
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <ul class="mobile-menu-list">
-        <li>
-          <a href="">Studio</a>
-        </li>
-        <li>
-          <a href="">Portfolio</a>
-        </li>
-        <li>
-          <a href="">Contacts</a>
-        </li>
-      </ul>
-        <ul class="mobile-contacts-list">
-          <li class="mobile-contacts-item">
-            <a class="mobile-contacts-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li>
+            <a class="mobile-menu-link current" href="">Studio</a>
           </li>
-          <li class="mobile-contacts-item">
-            <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a>
+          <li>
+            <a class="mobile-menu-link" href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="mobile-menu-link" href="">Contacts</a>
           </li>
         </ul>
-      </address>
+      </nav>
+        <address class="mobile-menu-address">
+          <ul class="mobile-contacts-list">
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-link current" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+   
 
       <ul class="mobile-menu-soc-wrapper">
         <li class="soc-link">
